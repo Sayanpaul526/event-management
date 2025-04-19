@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+header {
+    background-color: #1abc9c;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #34495e;
+}
+
+.movies {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+.movie-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.card button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #16a085;
+}
+
+.booking {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+.booking-form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.booking-form label {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    display: block;
+}
+
+.booking-form input, .booking-form select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 15px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #16a085;
+}
+
+footer {
+    background-color: #1abc9c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

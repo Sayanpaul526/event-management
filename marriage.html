@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marriage Event Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+    }
+
+    header {
+      background: url('wedding-banner.jpg') no-repeat center center/cover;
+      height: 60vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    nav {
+      background-color: #b85c5c;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #b85c5c;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .service-box {
+      background-color: #ffe7df;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .service-box h3 {
+      margin-top: 0;
+    }
+
+    /* Auto-Scrolling Gallery */
+    .gallery-container {
+      overflow: hidden;
+      position: relative;
+      margin-top: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      animation: scrollGallery 30s linear infinite;
+      gap: 15px;
+    }
+
+    .gallery img {
+      flex: 0 0 auto;
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    @keyframes scrollGallery {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Duplicate images to create seamless loop */
+    .gallery img.clone {
+      visibility: hidden;
+    }
+
+    form {
+      background-color: #ffe7df;
+      padding: 55px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      background-color: #b85c5c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Celebrate Your Perfect Wedding</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We specialize in organizing dream weddings tailored to your vision. From grand venues to intimate settings, we handle every detail so you can focus on your big day.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Venue Booking</h3>
+        <p>Stunning venues to host your wedding — beachside, garden, or royal palace style.</p>
+      </div>
+      <div class="service-box">
+        <h3>Catering</h3>
+        <p>Multi-cuisine menus served fresh and elegantly by top chefs and caterers.</p>
+      </div>
+      <div class="service-box">
+        <h3>Photography</h3>
+        <p>Capture every moment beautifully with our professional photographers.</p>
+      </div>
+      <div class="service-box">
+        <h3>Decoration</h3>
+        <p>Thematic decorations with flowers, lights, and more — customized to your taste.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <div class="gallery">
+        <img src="https://th.bing.com/th/id/OIP.Z_JNnO7aZs0itbYRk9OmnQHaE7?w=284&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Wedding 1">
+        <img src="https://th.bing.com/th/id/OIP.LIML_8HJRkiAhlCZhfLhIQHaFk?w=239&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Wedding 2">
+        <img src="https://th.bing.com/th/id/OIP.ORm3P3xl7h4vVGxSxKG3AAHaDm?w=309&h=170&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Wedding 3">
+        <img src="https://th.bing.com/th/id/OIP.Z_JNnO7aZs0itbYRk9OmnQHaE7?w=284&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Wedding 4">
+        <img src="https://th.bing.com/th/id/OIP.LIML_8HJRkiAhlCZhfLhIQHaFk?w=239&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Wedding 5">
+        <img src="https://th.bing.com/th/id/OIP.ORm3P3xl7h4vVGxSxKG3AAHaDm?w=309&h=170&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Wedding 6">
+        
+        <img class="clone" src="https://th.bing.com/th/id/OIP.Z_JNnO7aZs0itbYRk9OmnQHaE7?w=284&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+        <img class="clone" src="https://th.bing.com/th/id/OIP.LIML_8HJRkiAhlCZhfLhIQHaFk?w=239&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Marriage Moments | Designed by Sayan</p>
+  </footer>
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/@denserai/embed-chat@1/dist/web.min.js";
+    Chatbot.init({
+      chatbotId: "8a4f2e9f-e462-4c21-9849-0e4ee8893881",
+    });
+  </script> 
+</body>
+</html>

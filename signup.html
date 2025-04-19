@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Signup for Event</h2>
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <span class="error" id="nameError"></span>
+            <input type="email" id="email" placeholder="Email" required>
+            <span class="error" id="emailError"></span>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <span class="error" id="phoneError"></span>
+            <input type="password" id="password" placeholder="Password" required>
+            <span class="error" id="passwordError"></span>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+    
+
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/@denserai/embed-chat@1/dist/web.min.js";
+        Chatbot.init({
+          chatbotId: "43fd8045-4da2-4acd-850f-bd1dcf930013",
+        });
+      </script>  
+         
+    
+</body>
+</html>

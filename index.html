@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav {
+            display: flex;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: #f9f9f9;
+            justify-content: space-between;
+            width: 70%;
+            align-items: center;
+            margin: 20px auto;
+            border-radius: 50px;
+        }
+
+        .nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .nav .logo img {
+            max-width: 100%;
+            height: 5vh;
+            padding: 0%;
+            border-radius: 50%;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 20px;
+            margin-left: auto;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 4px;
+        }
+
+        .nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .dropdown a {
+            padding: 10px 20px;
+            display: block;
+            white-space: nowrap;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .nav ul li {
+            position: relative;
+        }
+
+        footer {
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            min-height: 50px;
+            box-sizing: border-box;
+            margin-top: auto;
+            position: relative;
+            display: flex;
+            height: 183px;
+
+        }
+        footer{
+            position: fixed down;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: auto;
+        }
+
+        section#posters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 91px;
+            padding: 20px;
+            background: linear-gradient(to right, rgba(111, 210, 237,0.1), white, pink);
+            align-items: baseline;
+        }
+
+        section#posters a {
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+        }
+
+        section#posters img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        section#posters img:hover {
+            transform: scale(1.05);
+        }
+
+        section#posters p:hover {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        /*@media (max-width: 1200px) {
+            .nav {
+                width: 90%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            footer ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section#posters {
+                gap: 30px;
+            }
+
+            section#posters a {
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .nav .logo img {
+                height: 40px;
+            }
+
+            .nav ul {
+                gap: 10px;
+            }
+
+            section#posters {
+                gap: 20px;
+            }
+
+            section#posters a {
+                width: 130px;
+            }
+
+            section#posters img {
+                width: 100%;
+            } 
+
+
+        }*/
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            
+        }
+        video{
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <video src="index.mp4" autoplay muted loop></video>
+    <div class="container">
+
+        <div class="nav">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="events">
+                    <a href="#">Events</a>
+                    <div class="dropdown">
+                        <a href="#">Birthday</a>
+                        <a href="marriage.html">Marriage</a>
+                        <a href="trip.html">Trip</a>
+                        <a href="movie.html">Movie</a>
+                    </div>
+                </li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <section id="posters">
+            <a href="marriage.html">
+                <img src="https://th.bing.com/th/id/OIP.eyq0jlgODjK4w3rVnfALlQAAAA?w=202&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="Wedding 1">
+                <p>Marriage</p>
+            </a>
+            <a href="movie.html">
+                <img src="https://th.bing.com/th/id/OIP.J9_2JYrtbHyf1IW_1g-NjwHaJ2?w=202&h=269&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="movie">
+                <p>Movie</p>
+            </a>
+            <a href="trip.html">
+                <img src="https://th.bing.com/th/id/OIP.D6ZaXlPC4orsB3xDEGTvhgHaKe?w=202&h=286&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="trip">
+                <p>Trip</p>
+            </a>
+            <a href="#">
+                <img src="https://th.bing.com/th/id/OIP.82xNOtX_RcUKfjurZEpJlQHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="Birthday">
+                <p>Birthday</p>
+            </a>
+            <a href="#">
+                <img src="https://th.bing.com/th/id/OIP.hBTXCh86dXw5hcC--Dz28QHaLG?w=202&h=303&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="proposing">
+                <p>I Love You</p>
+            </a>
+        </section>
+    </div>
+
+    <footer>
+        <ul>
+            <li>sayan@gmail.com</li>
+            <li>8100293583</li>
+            <li>310 kabi nabin sen road</li>
+            <li>ddfdeedf</li>
+        </ul>
+        <ul>
+            <li>shreya@gmail.com</li>
+            <li>9883277288</li>
+            <li>310 kabi nabin sen road</li>
+            <li>ddfdeedf</li>
+        </ul>
+        <ul>
+            <li>shashank@gmail.com</li>
+            <li>9883277288</li>
+            <li>310 kabi nabin sen road</li>
+            <li>ddfdeedf</li>
+        </ul>
+        <ul>
+            <li>shivam@gmail.com</li>
+            <li>9883277288</li>
+            <li>310 kabi nabin sen road</li>
+            <li>ddfdeedf</li>
+        </ul>
+    </footer>
+
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/@denserai/embed-chat@1/dist/web.min.js";
+        Chatbot.init({
+            chatbotId: "8a4f2e9f-e462-4c21-9849-0e4ee8893881",
+        });
+    </script>
+
+</body>
+
+</html>

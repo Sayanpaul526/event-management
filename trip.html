@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="trip.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="signup.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <h1>Find Your Perfect Trip</h1>
+        <form class="search-form">
+            <input type="text" placeholder="Destination or Hotel">
+            <input type="date" placeholder="Check-in Date">
+            <input type="date" placeholder="Check-out Date">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-cards">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.7xJp0D6M1bXWJb2g3KbyIgHaE-?w=257&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Destination 1">
+                <p>Paris</p>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.IGCjsmTARUl4lNJV6OlCZQHaE7?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Destination 2">
+                <p>New York</p>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.Xzo4zpSdqth4KXh6KPWWrAHaEo?w=314&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Destination 3">
+                <p>Tokyo</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TravelBooking.com | All Rights Reserved</p>
+    </footer>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/@denserai/embed-chat@1/dist/web.min.js";
+        Chatbot.init({
+          chatbotId: "8a4f2e9f-e462-4c21-9849-0e4ee8893881",
+        });
+      </script> 
+</body>
+</html>
